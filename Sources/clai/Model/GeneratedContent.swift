@@ -13,14 +13,14 @@ struct GeneratedContent {
 
         guard model.isAvailable else {
             fatalError(
-                "ERROR: Model are unvailable. Maybe you need install the Apple Inteligence..."
+                "ERROR: Model are unavailable. Maybe, you need install the Apple Intelligence ir your macOS..."
             )
         }
     }
 
-    public func answer(_ to: String) async throws -> String {
+    public func answer(_ prompt: String) async throws -> String {
         let response = try await session.respond(
-            to: Prompt(to)
+            to: Prompt(prompt)
         )
 
         return response.content

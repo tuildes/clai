@@ -2,7 +2,13 @@ import ArgumentParser
 import Foundation
 
 struct Ask: AsyncParsableCommand {
-    @Argument(help: "Prompt to Apple Inteligence")
+    static let configuration = CommandConfiguration(
+        commandName: "ask",
+        abstract: "Ask to Apple Intelligence",
+        version: "1.0.0"
+    )
+
+    @Argument(help: "Prompt to Apple Intelligence")
     var prompt: String
 
     // MARK: - Init

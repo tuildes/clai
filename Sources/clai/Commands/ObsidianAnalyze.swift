@@ -1,10 +1,14 @@
 import ArgumentParser
 import Foundation
 
+// NOTE: - This is maded for my personal use, you can change for your best practices
 struct ObsidianAnalyze: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
-        abstract: "Analisa um arquivo Markdown removendo o frontmatter."
+        commandName: "obs",
+        abstract: "Obsidian note analyze: Anki and Atomic",
+        version: "1.0.0"
     )
+
 
     @Argument(help: "Markdown file path", transform: URL.init(fileURLWithPath:))
     var file: URL

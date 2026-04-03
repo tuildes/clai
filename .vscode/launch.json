@@ -59,6 +59,26 @@
             "target": "clia",
             "configuration": "release",
             "preLaunchTask": "swift: Build Release clia"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:clai}",
+            "name": "Debug clai",
+            "target": "clai",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug clai"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:clai}",
+            "name": "Release clai",
+            "target": "clai",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release clai"
         }
     ]
 }
