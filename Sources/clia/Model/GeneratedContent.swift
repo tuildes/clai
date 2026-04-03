@@ -4,7 +4,7 @@ struct GeneratedContent {
     let model: SystemLanguageModel
     let session: LanguageModelSession
 
-    init(_ instructions: String? = nil) {
+    init(instructions: String? = nil) {
         self.model = .init(guardrails: .permissiveContentTransformations)
         self.session = LanguageModelSession(
             model: self.model,
