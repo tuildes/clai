@@ -13,14 +13,6 @@ let package = Package(
             name: "clia",
             dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser")
-            ],
-            linkerSettings: [
-                .unsafeFlags([
-                    "-Xlinker", "-sectcreate",
-                    "-Xlinker", "__TEXT",
-                    "-Xlinker", "__info_plist",
-                    "-Xlinker", "./Info.plist",
-                ])
             ]
         )
     ],

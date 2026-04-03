@@ -4,10 +4,11 @@ struct GeneratedContent {
     let model: SystemLanguageModel
     let session: LanguageModelSession
 
-    init() {
+    init(_ instructions: String? = nil) {
         self.model = .init(guardrails: .permissiveContentTransformations)
         self.session = LanguageModelSession(
-            model: self.model
+            model: self.model,
+            instructions: instructions
         )
 
         guard model.isAvailable else {
