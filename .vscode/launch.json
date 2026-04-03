@@ -1,0 +1,64 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:clia}",
+            "name": "Debug cli",
+            "target": "cli",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug cli"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:clia}",
+            "name": "Release cli",
+            "target": "cli",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release cli"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:clia}",
+            "name": "Debug MainCLI",
+            "target": "MainCLI",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug MainCLI"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:clia}",
+            "name": "Release MainCLI",
+            "target": "MainCLI",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release MainCLI"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:clia}",
+            "name": "Debug clia",
+            "target": "clia",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug clia"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:clia}",
+            "name": "Release clia",
+            "target": "clia",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release clia"
+        }
+    ]
+}
